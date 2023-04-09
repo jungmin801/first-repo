@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UP & DOWN</title>
+    <script
+      src="https://kit.fontawesome.com/73a6270b53.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gamja+Flower&family=Noto+Sans+KR&family=Tilt+Prism&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="header-main-title">
+        <div class="col-first">
+          <i class="fa-solid fa-thumbs-up fa-flip-horizontal"></i>
+          UP
+        </div>
+        <div class="col-second">&</div>
+        <div class="col-third">
+          DOWN
+          <i class="fa-solid fa-thumbs-down"></i>
+        </div>
+      </h1>
+      <h2 class="header-sub-title">랜덤 숫자 맞추기</h2>
+      <div id="result-area">과연 결과는?</div>
+      <div class="play-area">
+        <div class="row-1">
+          <input
+            type="text"
+            id="user-input"
+            placeholder="1~100 사이의 숫자를 입력"
+          />
+        </div>
+        <div class="row-2">
+          <button id="play-button">Go!</button>
+        </div>
+      </div>
+      <div id="chances-area">남은 기회: 5번</div>
+      <div id="try-again"></div>
+      <button id="reset-button">다시하기</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
 </html>
